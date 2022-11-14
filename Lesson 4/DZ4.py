@@ -163,29 +163,29 @@ clear()
 # write_file("file34_1.txt", create_str(koef1))
 # write_file("file34_2.txt", create_str(koef2))
 
-# # нахождение суммы многочлена
+# нахождение суммы многочлена
 
-# with open('file34_1.txt', 'r') as data:
-#     st1 = data.readlines()
-# with open('file34_2.txt', 'r') as data:
-#     st2 = data.readlines()
-# print(f"Первый многочлен {st1}")
-# print(f"Второй многочлен {st2}")
-# lst1 = calc_mn(st1)
-# lst2 = calc_mn(st2)
-# ll = len(lst1)
-# if len(lst1) > len(lst2):
-#     ll = len(lst2)
-# lst_new = [lst1[i] + lst2[i] for i in range(ll)]
-# if len(lst1) > len(lst2):
-#     mm = len(lst1)
-#     for i in range(ll,mm):
-#         lst_new.append(lst1[i])
-# else:
-#     mm = len(lst2)
-#     for i in range(ll,mm):
-#         lst_new.append(lst2[i])
-# write_file("file34_res.txt", create_str(lst_new))
-# with open('file34_res.txt', 'r') as data:
-#     st3 = data.readlines()
-# print(f"Результирующий многочлен {st3}")
+with open('file34_1.txt', 'r') as data:
+    st1 = data.readlines()
+with open('file34_2.txt', 'r') as data:
+    st2 = data.readlines()
+print(f"Первый многочлен {st1}")
+print(f"Второй многочлен {st2}")
+lst1 = calc_mn(st1)
+lst2 = calc_mn(st2)
+ll = len(lst1)
+if len(lst1) > len(lst2):
+    ll = len(lst2)
+lst_new = [lst1[i] + lst2[i] for i in range(ll)]
+if len(lst1) > len(lst2):
+    mm = len(lst1)
+    for i in range(ll,mm):
+        lst_new.append(lst1[i])
+else:
+    mm = len(lst2)
+    for i in range(ll,mm):
+        lst_new.append(lst2[i])
+write_file("file34_res.txt", create_str(lst_new))
+with open('file34_res.txt', 'r') as data:
+    st3 = data.readlines()
+print(f"Результирующий многочлен {st3}")
