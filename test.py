@@ -65,7 +65,8 @@ clear()
 # print('YES' if ((year%4)==0 and (year%100)!=0) or (year%400)==0 else 'NO')
 
 
-text = 'odjfgo/ghosehg/sjgho/DZ_65'
-list = text.split(sep='/')
-j = len(list) - 1
-print(list[j])
+# text = 'odjfgo/ghosehg/sjgho/DZ_65'
+# list = text.split(sep='/')
+# j = len(list) - 1
+# print(list[j])
+
