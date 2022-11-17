@@ -1,8 +1,4 @@
-from curses.ascii import LF
-import os
-clear = lambda: os.system('clear')  # При использовании MacOS или Linux
-# clear = lambda: os.system('CLS')  # При использовании Windows
-clear()
+
 
 #____________________________________________________________________________________
 
@@ -61,18 +57,25 @@ clear()
 # targetFile.close()
 # targetFile2.close()
 
-import os, sys
-targetFile = open('List.txt', 'w')
-a = []
+# import os, sys
+# targetFile = open('List.txt', 'w')
+# a = []
 
-for root, dirs, files in os.walk(".", topdown=False):
-    for name in files:
-        if 'DZ' in name:                                     # первая очередь
-            a.append(os.path.join(root, name))
-        elif '62' in name:                                  # вторая очередь
-            a.append(os.path.join(root, name))
-        else:
-            a.append(os.path.join(root, name))
+# for root, dirs, files in os.walk(".", topdown=False):
+#     for name in files:
+#         if 'DZ' in name:                                     # первая очередь
+#             a.append(os.path.join(root, name))
+#         elif '62' in name:                                  # вторая очередь
+#             a.append(os.path.join(root, name))
+#         else:
+#             a.append(os.path.join(root, name))
 
-print(*a, file=targetFile, sep="\n")
-targetFile.close()
+# print(*a, file=targetFile, sep="\n")
+# targetFile.close()
+
+
+
+
+n = 5678
+print(n // 10 % 10)
+
